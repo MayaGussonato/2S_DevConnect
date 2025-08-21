@@ -1,0 +1,55 @@
+:root{
+    --cor-preto: #000000;
+    --cor-branco: #fff;
+    --cor-azul: #487DDC;
+    --cor-azul-yale: #00317F;
+    --cor-jordy-azul: #8BB6FA;
+    --cor-alice-azul: #DBEAFE;
+    --cor-cinza-frances: #BECBCD;
+    
+   --borda:3px solid var(--cor-azul-yale);
+   --borda-arredondada: 2px;
+ 
+   --tamanho-fonte-lg: 40px;
+   --tamanho-fonte-md: 20px;
+   --tamanho-fonte-sm: 14px;
+   
+
+}
+
+   @font-face {
+    font-family: GFS_Didot;
+    src: url(../Fonts/GFS_Didot/GFSDidot-Regular.ttf);
+}
+
+    @font-face {
+        font-family: EB_Garamond;
+        src: url(../Fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf),
+        url(../Fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf); 
+}
+
+/*SELETOR GLOBAL*/
+
+*{
+    font-family: "GFS_Didot", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*O VALOR TOTAL DO TAMANHO DO ELEMENTO 
+    CONTA TANTO COM ESPACOS INTERNOS E EXTERNO E BORDA*/
+}
+
+body{
+    background-color: var(--cor-cinza-frances)
+}
+h1{
+    position: absolute;/*alterar a pisicao do elemento*/
+    z-index: -1;/*camadas do elementos*/
+    opacity: 0;
+}
+  /*formulario*/
+  input{
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+    background-color: #fff);
+  }
