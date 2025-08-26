@@ -1,0 +1,90 @@
+
+    main {width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+       
+
+main>div {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+/* formulário */
+#formulario {
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
+}
+
+input[type="email"],
+input[type="password"] {
+    background-color: transparent; /* deixa transparente */
+    border: 1px solid #0b3d91; /* mesma cor da borda do upload */
+    border-radius: 5px; /* borda arredondada */
+    padding: 8px;
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000; /* cor do texto */
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.botao-upload {
+    width: 100%;           /* mesma largura */
+    max-width: 300px;      /* limite, se quiser */
+    height: 40px;          /* mesma altura */
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    border: 1px solid #0b3d91;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+}
+.formulario-botao-azul{
+    width: 100%;
+}
+.formulario > div > p{
+    text-align: center;
+    font-size: var(--tamanho-fonte-sm);
+
+}
+
+#formulario > p {
+    text-align: center;
+}
+
+
+#campo-uploud {
+    display: none;  /*none esconde*/
+}
+.botao-upload {
+    background-color: #b2b0b0;  
+    color: #ffffff;    
+    background-color: transparent;   
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
