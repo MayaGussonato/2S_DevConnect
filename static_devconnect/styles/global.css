@@ -13,48 +13,46 @@
    --tamanho-fonte-lg: 40px;
    --tamanho-fonte-md: 20px;
    --tamanho-fonte-sm: 13px;
-   
 }
 
-   @font-face {
+@font-face {
     font-family: GFS_Didot;
     src: url(../Fonts/GFS_Didot/GFSDidot-Regular.ttf);
 }
 
-    @font-face {
-        font-family: EB_Garamond;
-        src: url(../Fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf),
-        url(../Fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf); 
+@font-face {
+    font-family: EB_Garamond;
+    src: url(../Fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf),
+    url(../Fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf); 
 }
 
 /*SELETOR GLOBAL*/
-
 *{
     font-family: "GFS_Didot", sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /*O VALOR TOTAL DO TAMANHO DO ELEMENTO 
-    CONTA TANTO COM ESPACOS INTERNOS E EXTERNO E BORDA*/
+    box-sizing: border-box;
+    outline-color:var(--cor-azul) ;
 }
 
 body{
     background-color: var(--cor-branco)
 }
 h1{
-    position: absolute;/*alterar a pisicao do elemento*/
-    z-index: -1;/*camadas do elementos*/
+    position: absolute;
+    z-index: -1;
     opacity: 0;
 }
+
 .estilo-formulario input[type="text"],
 .estilo-formulario input[type="password"] {
-    background: transparent; /* deixa transparente */
-    border: 1px solid #00317F;  /* mantém a borda visível */
-    border-radius: 8px;      /* arredonda a borda */
-    color: #000;             /* cor do texto */
+    background: transparent;
+    border: 1px solid #00317F;
+    border-radius: 8px;
+    color: #000;
 }
 
-  /*formulario*/
-  .estilo-formulario{
+.estilo-formulario{
     border: var(--borda);
     border-bottom: var(--borda);
    border-image: linear-gradient(
@@ -65,10 +63,9 @@ h1{
     ) 1;
     width: 100%;
     background-color:#fff
-
 }
 
-  input{
+input{
     width: 100%;
     height: 35px;
     border: var(--borda);
@@ -80,52 +77,63 @@ h1{
         rgba(0, 125, 255, 1) 100%
     ) 1;
     background-color: (#fff);
-  }
-
-  .formulario-botao-azul{
-    background-color: var(--cor-azul);
-    border-radius: var(--borda-arredondada);
-    border: none;
-    height: 35px;
-
-    color: var(--cor-branco);
-  }
-  #campo-uploud {
-    display: none;  /*none esconde*/
 }
+
 .botao-upload {
-    color: #8BB6FA;    
-    background-color: #DBEAFE;   
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
     display: inline-block;
+    width: 100%;
+    min-width: 300;
+    height: 35px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--cor-preto);
+    border: var(--borda);
+    cursor: pointer;
     font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
     text-align: center;
+}
+.botao-upload:hover {
+    background-color: var(--cor-jordy-azul);
+    color: var(--cor-branco);
+}
+
+.formulario-botao-azul {
+    border: var(--borda);
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--cor-preto);
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.formulario-botao-azul:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
 }
 
 /*cabecalho */
-  #cabecalho{
-    width: 100%; /*100% da janela de vizualizacao */
+#cabecalho{
+    width: 100%;
     height: 80px;
     background-color: #8BB6FA;
     display: flex;
     justify-content: center;
-   /* align-items: center;*/
-   border-bottom: var(--borda);
-   border-image: linear-gradient(
+    border-bottom: var(--borda);
+    border-image: linear-gradient(
         82deg,
         rgb(0, 49, 127) 0%,
         rgb(0,88,229,1) 35%,
         rgba(0, 125, 255, 1) 100%
     ) 1;
-  }
+}
 #cabecalho > nav{
-   /* background-color: #8BB6FA;*/
     width: 85%;
     max-width: 1440px;
     height: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,7 +144,6 @@ h1{
 }
 
 .cabecalho-acoes{
-   /* background-color: black;*/
     display: flex;
     align-items: center;
     gap: 10PX;
@@ -151,14 +158,20 @@ h1{
     height: 31PX;
 }
 
-#foto-perfil{
+.foto-perfil{
     width: 40px;
     height: 40PX;
     object-fit: cover;
     object-position: center;
     border-radius:50px ;
 }
-
+.vericado{
+    width: 15px;
+    height: 15PX;
+    object-fit: cover;
+    object-position: center;
+    border-radius:50px ;
+}
 
 /*responsivo*/
 @media only screen and (max-width:485px ) {
@@ -169,5 +182,4 @@ h1{
     #logo-desktop{
         display: none;
     }
-    
 }

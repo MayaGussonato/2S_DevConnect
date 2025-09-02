@@ -29,6 +29,7 @@ input[type="email"],
 input[type="password"] {
     background-color: transparent; /* deixa transparente */
     border: 1px solid #0b3d91; /* mesma cor da borda do upload */
+    
     border-radius: 5px; /* borda arredondada */
     padding: 8px;
     width: 100%;
