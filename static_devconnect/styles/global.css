@@ -36,7 +36,7 @@
 }
 
 body{
-    background-color: var(--cor-branco)
+    background-color: #DBEAFE;
 }
 h1{
     position: absolute;
@@ -62,7 +62,7 @@ h1{
         rgba(0, 125, 255, 1) 100%
     ) 1;
     width: 100%;
-    background-color:#fff
+    background-color:#fff;
 }
 
 input{

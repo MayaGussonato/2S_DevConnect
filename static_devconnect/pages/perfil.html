@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,37 +10,132 @@
     <title>Perfil - DevConnect</title>
 
     <link rel="shortcut icon" href="../images/DevCon-meu.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/Perfil.css">
 
-    <style>
-        body {
-            background-color: #DBEAFE; /* fundo azul clarinho */
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/perfil.css">
 </head>
-<body>
-    <!-- Topo -->
-    <header>
-        <h1>DevConnect</h1>
-        <nav>
-            <img id="topo-prfil" src="../images/variante 61x61.svg"><img
-            <img id="topo-prfil" src="../images/variante 61x61 p2.svg"></img>
-            <img  src="../images/perfil thi.svg" alt="Perfil" class="perfil-mini">
-        </nav>
-        <hr> 
-    </header>
-</body>
-</html>
-<section class="perfil">
-    <img src="../images/perfil 1.svg" alt="Foto Perfil" class="foto-perfil">
-    <div>
-        <h2>Veigh <img class="verificado" src="../images/variante 31x31.svg"></img></h2>
-        <p>125 publicações  • 7,1M seguidores  • seguindo 1006</p>
-        <p class="nome">Thiago Veigh</p>
-        <a href="#">Editar perfil</a> | <a href="#">Sair</a>
-    </div>
-</section>
 
-<hr>
+<body>
+    <header id="cabecalho">
+        <nav>
+            <a id="logo-desktop" href="./feed.html">
+                <img src="../images/DevConnect-MEU p2.svg" alt="logo da empresa DevConnect">
+            </a>
+            <a id="logo-mobile" href="./feed.html">
+                <img src="../images/DevCon-meu.svg" alt="logo da empresa DevConnect">
+            </a>
+
+            <div class="cabecalho-acoes">
+                <a href="./feed.html">
+                    <img class="icones" src="../images/casa-branca.svg" alt="Home">
+                </a>
+                <a href="./feed.html">
+                    <img class="icones" src="../images/coracao-branco.svg" alt="Curtidas">
+                </a>
+                <a href="#">
+                    <img class="foto-perfil-mini" src="../images/perfil 1.svg" alt="Foto perfil">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="infos-perfil">
+            
+        </section>
+        <div class="perfil-bio">
+
+            <img src="../images/perfil 1.svg" alt="Foto Perfil" class="foto-perfil">
+            <div class="info-perfil">
+                <span class="nome-com-verificado">
+                    Veigh
+                    <img class="verificado" src="../images/verificacao.svg" alt="Selo verificado">
+                </span>
+<div  class="info-perfil">
+    <p> 130 publicações </p>
+    <p> 7,3M seguidores </p>
+    <p>  1001 seguindo </p>
+</div>
+
+                <div class="acoes-perfil">
+                    <p class="nome">Thiago Veigh</p>
+                    <a href="#">Editar perfil</a>
+                    <span> | </span>
+                    <a href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+    </main>
+     
+
+    <div class="container-flex-publi">
+        <section class="publicacoes">
+            <div class="publicacoes">
+                <img src="../images/publi-quadrado.svg" alt="Ícone publicação">
+                <h3>Publicação</h3>
+            </div>
+        </section>
+
+        <div class="card-publi">
+            <div class="publi-header">
+                <img src="../images/perfil 1.svg" alt="Foto Perfil" class="foto-perfil-mini">
+                <span class="nome-com-verificado">
+                    Veigh
+                    <img class="verificado" src="../images/verificacao.svg" alt="">
+                </span>
+            </div>
+            <p>
+                15 das 16 faixas entraram no Top 50 e fui ranqueado em <br>
+                #3 maior estreia de Álbum no <br>
+                Muito daora! Obrigado a todos, pelos elogios e pelas críticas. <br>
+                É meu segundo álbum, estou aprendendo muito ainda.
+            </p>
+        </div>
+
+        <div class="card-publi">
+            <div class="publi-header">
+                <img src="../images/perfil 1.svg" alt="Foto Perfil" class="foto-perfil-mini">
+                <span class="nome-com-verificado">
+                    Veigh
+                    <img class="verificado" src="../images/verificacao.svg" alt="">
+                </span>
+            </div>
+
+            <img src="../images/Evom tour.png" alt="Foto publicação" class="imagem-post">
+            <div class="interacoes-publi">
+
+                <figcaption class="descricao-publicacao">          
+
+                <div class="interacoes-publi">
+                    
+                    <button>
+                        <img class="icone-interacao" src="../images/icone-coracao-preto.svg" alt="curtidas">
+                        222 mil
+                    </button>
+                    <button>
+                        <img class="icone-interacao" src="../images/icone-comentario-preto.svg" alt="comentarios">
+                        3.824
+                    </button>
+                </div>
+            <div class="descricao-publi" >
+                Veigh
+
+                <p> EVOM TOUR 2025. 
+                Ingressos disponíveis, dia 03/09.</p>
+
+            </div >
+                
+                <button type="button">Ver mais comentarios...</button>
+
+            </figcaption>
+
+            </figure>
+
+          
+        </div>
+
+    </div>
+
+</body>
+
+</html>
